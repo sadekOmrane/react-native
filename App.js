@@ -18,6 +18,8 @@ import Exercice9Page from "./screens/exercice9.page";
 import Exercice10Page from "./screens/exercice10.page";
 import Exercice2Page from "./screens/exercice2.page";
 import Exercice1Page from "./screens/exercice1.page";
+import LoginPage from "./screens/login.page";
+import RegisterPage from "./screens/register.page";
 
 const Stack = createNativeStackNavigator();
 
@@ -38,6 +40,8 @@ export default function App() {
           <Stack.Screen name="Exercice9" component={Exercice9Page} />
           <Stack.Screen name="Exercice10" component={Exercice10Page} />
           <Stack.Screen name="Dashboard" component={DashboardPage} />
+          <Stack.Screen name="Login" component={LoginPage} />
+          <Stack.Screen name="Register" component={RegisterPage} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>
